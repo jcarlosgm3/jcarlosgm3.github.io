@@ -279,14 +279,62 @@
          			
                 </div>
             </div>
-            <div class="row">
+           <div class="row">
             	 <div class="col-lg-8 col-lg-offset-2">
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                 <form method="POST" action="http://formspree.io/jcarlosgm3@gmail.com">
-  			<input type="email" name="email" placeholder="Your email">
- 			 <textarea name="message" placeholder="Your message"></textarea>
-  			<button type="submit">Send</button>
-		</form>
+                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+                    <form method="POST" action="http://formspree.io/jcarlosgm3@gmail.com">
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 controls">
+                                <label>Nombre</label>
+                                <div class="input-group">
+  									<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                	<input type="text" class="form-control" placeholder="Nombre" name="name" required data-validation-required-message="Por favor, introduce tu nombre.">
+                                	
+                                </div>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 controls">
+                                <label>Apellidos</label>
+                                <div class="input-group">
+  									<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                	<input type="tel" class="form-control" placeholder="Apellidos" name="surname" required data-validation-required-message="Por favor, introduce tus apellidos.">
+                                	
+                                </div>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 controls">
+                                <label>Email</label>
+                                <div class="input-group">
+  									<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                	<input type="email" class="form-control" placeholder="Email" name="email" required data-validation-required-message="Por favor, introduce tu email.">
+                                </div>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 controls">
+                                <label>Mensaje</label>
+                                <div class="input-group">
+        							<span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                	<textarea rows="5" class="form-control" placeholder="Mensaje" name="message" required data-validation-required-message="Por favor, introduce un mensaje."></textarea>	
+                                </div>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-xs-12 text-center">
+                                <button type="submit" value="Send" class="btn btn-success btn-lg">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
 	</div>		 
